@@ -285,9 +285,7 @@ header {
   background-image: url("../images/header-cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  text-shadow: 2px 1px black
-
+  color: #ffffff;
 }
 header h1 {
   font-size: 3rem;
@@ -457,4 +455,5 @@ footer {
 footer p {
   font-size: 1.2rem;
 }
+
 /*# sourceMappingURL=main.css.map */
