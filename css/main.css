@@ -247,7 +247,9 @@ header {
   background-image: url("../images/header-cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
+  color: white;
+  text-shadow: 3px 2px black
+
 }
 header h1 {
   font-size: 3rem;
@@ -362,5 +364,11 @@ header p {
 #bestAdventures .grid-item .action .btn-action:hover {
   background-color: #2f8e57;
 }
+
+
+
+
+
+
 
 /*# sourceMappingURL=main.css.map */
