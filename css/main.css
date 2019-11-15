@@ -133,4 +133,132 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: #343434;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  margin: 15px 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #343434;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+nav .brand {
+  font-weight: bold;
+}
+nav ul {
+  display: none;
+}
+
+/* with flexbox */
+#bestAdventures .grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#bestAdventures .grid-col {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 0.1rem;
+  /* 2 columns by default, hide columns 2 & 3 */
+  /* 3 columns at medium size */
+  /* 4 columns at large size */
+}
+#bestAdventures .grid-col--2, #bestAdventures .grid-col--3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #bestAdventures .grid-col--2 {
+    display: block;
+    /* show column 2 */
+  }
+}
+@media (min-width: 1080px) {
+  #bestAdventures .grid-col--3 {
+    display: block;
+    /* show column 3 */
+  }
+}
+#bestAdventures .grid-item {
+  position: relative;
+}
+#bestAdventures .grid-item .action {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  display: flex;
+}
+#bestAdventures .grid-item .action .btn-action {
+  background-color: #3cb46e;
+  padding: 5px;
+  color: #ffffff;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
+}
+#bestAdventures .grid-item .action .btn-action--like {
+  padding-left: 15px;
+  border-right: 1px solid #ffffff;
+  border-radius: 25px 0 0px 25px;
+}
+#bestAdventures .grid-item .action .btn-action--add {
+  padding-right: 15px;
+  border-radius: 0 25px 25px 0;
+}
+#bestAdventures .grid-item .action .btn-action:hover {
+  background-color: #2f8e57;
+}
+
 /*# sourceMappingURL=main.css.map */

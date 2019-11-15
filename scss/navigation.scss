@@ -1,0 +1,12 @@
+nav {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .brand {
+        font-weight: bold;
+    }
+    ul {
+        display: none;
+    }
+}

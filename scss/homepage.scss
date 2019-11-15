@@ -1,0 +1,66 @@
+    /* with flexbox */
+    
+    #bestAdventures {
+        .grid {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            &-col {
+                -webkit-box-flex: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                padding: 0 .1rem;
+                /* 2 columns by default, hide columns 2 & 3 */
+                &--2,
+                &--3 {
+                    display: none
+                }
+                /* 3 columns at medium size */
+                &--2 {
+                    @media ( min-width: $tablet) {
+                        display: block;
+                        /* show column 2 */
+                    }
+                }
+                /* 4 columns at large size */
+                &--3 {
+                    @media ( min-width: $large) {
+                        display: block;
+                        /* show column 3 */
+                    }
+                }
+            }
+            &-item {
+                position: relative;
+            }
+            &-item .action {
+                position: absolute;
+                right: 10px;
+                bottom: 15px;
+                display: flex;
+                .btn-action {
+                    background-color: $green-color;
+                    padding: 5px;
+                    color: $white-color;
+                    -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                    transition: .3s;
+                    &--like {
+                        padding-left: 15px;
+                        border-right: 1px solid $white-color;
+                        border-radius: 25px 0 0px 25px;
+                    }
+                    &--add {
+                        padding-right: 15px;
+                        border-radius: 0 25px 25px 0;
+                    }
+                    &:hover {
+                        background-color: darken($green-color, 10%);
+                    }
+                }
+            }
+        }
+    }
