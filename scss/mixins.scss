@@ -1,0 +1,25 @@
+@mixin flex-layout($direction: row, $justify: inherit, $align: inherit) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin base-btn ($bg-color, $color, $width: 100%, $media-with: 120px) {
+    background-color: $bg-color;
+    color: $color;
+    width: $width;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s;
+    &:hover {
+        background-color: darken($bg-color, 10%);
+        color: lighten($colo, 10%);
+    }
+    @media (min-width: $tablet) and (min-width: $large) {
+        width: $media-with;
+    }
+}

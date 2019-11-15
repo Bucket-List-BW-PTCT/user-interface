@@ -1,20 +1,22 @@
 {
-  "name": "user-interface",
-  "version": "1.0.0",
-  "description": "Bucket List User Interface",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bucket-List-BW-PTCT/user-interface.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Bucket-List-BW-PTCT/user-interface/issues"
-  },
-  "homepage": "https://github.com/Bucket-List-BW-PTCT/user-interface#readme"
+    "name": "user-interface",
+    "version": "1.0.0",
+    "description": "Bucket List User Interface",
+    "main": "index.js",
+    "scripts": {
+        "start:sass": "sass scss/main.scss css/main.css --watch",
+        "build:sass": "sass scss/main.scss css/main.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bucket-List-BW-PTCT/user-interface.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Bucket-List-BW-PTCT/user-interface/issues"
+    },
+    "homepage": "https://github.com/Bucket-List-BW-PTCT/user-interface#readme",
+    "devDependencies": {}
 }
