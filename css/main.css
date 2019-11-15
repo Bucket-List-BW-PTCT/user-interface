@@ -271,8 +271,8 @@ header .search-bar input {
 }
 header .search-bar button {
   border: 1px solid #a7a5a5;
-  background-color: #3cb46e;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #3cb46e;
   padding: 8.5px 20px 5px 20px;
   text-align: center;
   border-radius: 0 25px 25px 0;
@@ -280,7 +280,7 @@ header .search-bar button {
   transition: 0.3s;
 }
 header .search-bar button:hover {
-  background-color: #2f8e57;
+  color: #2f8e57;
 }
 header p {
   margin-top: 5px;
@@ -361,6 +361,61 @@ header p {
 }
 #bestAdventures .grid-item .action .btn-action:hover {
   background-color: #2f8e57;
+}
+
+#features {
+  background-color: #343434;
+  height: fit-content;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+}
+#features .content-text {
+  margin-top: 30px;
+}
+#features .tools {
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: wrap;
+  padding: 40px 0 20px 0;
+}
+#features .tools h3 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 16px 0;
+}
+#features .tools p {
+  color: #707070;
+}
+@media (min-width: 1080px) {
+  #features .tools {
+    padding: 40px 20rem 20px 20rem;
+  }
+}
+#features .col-3 {
+  padding-bottom: 15px;
+  width: 182px;
+}
+#features .icon {
+  width: 80px;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #ffffff;
+  color: #3cb46e;
+  border-radius: 7px;
+}
+#features .icon .material-icons {
+  font-size: 6rem;
+}
+
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+footer p {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
