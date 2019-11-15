@@ -248,7 +248,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  text-shadow: 3px 2px black
+  text-shadow: 2px 1px black
 
 }
 header h1 {
@@ -364,6 +364,10 @@ header p {
 #bestAdventures .grid-item .action .btn-action:hover {
   background-color: #2f8e57;
 }
+
+ 
+ 
+ 
 
 footer {
   display:flex;
