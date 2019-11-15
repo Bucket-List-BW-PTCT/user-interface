@@ -1,6 +1,60 @@
     /* with flexbox */
     
+    header {
+        @include flex-layout(column, center, center);
+        height: calc(100vh - 300px);
+        background-image: url('../images/header-cover.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white-color;
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .search-bar {
+            @include flex-layout(row,
+            center,
+            center);
+            text-align: center;
+            position: relative;
+            input {
+                width: 75%;
+                padding: 13px;
+                border-radius: 25px 0 0 25px;
+                border: 1px solid $light-grey;
+            }
+            button {
+                border: 1px solid $light-grey;
+                background-color: $green-color;
+                color: $white-color;
+                padding: 8.5px 20px 5px 20px;
+                text-align: center;
+                border-radius: 0 25px 25px 0;
+                border-left: none;
+                transition: .3s;
+                &:hover {
+                    background-color: darken($green-color, 10%);
+                }
+            }
+        }
+        p {
+            margin-top: 5px;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        @media (min-width: $tablet) {
+            padding: 0 5rem;
+        }
+        @media (min-width: $large) {
+            padding: 0 20rem;
+        }
+    }
+    
     #bestAdventures {
+        padding: 15px;
         .grid {
             display: -webkit-box;
             display: -webkit-flex;
