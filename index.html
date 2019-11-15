@@ -15,12 +15,12 @@
     <nav>
         <div class="container">
             <a href="index.html" class="brand">BucketList</a>
-            <a href="javascript:void(0)">
+            <a onclick="openMenu()" class="toggle-menu" href="javascript:void(0)">
                 <i class="material-icons">
                     menu
                 </i>
             </a>
-            <ul>
+            <ul id="navLinks">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -34,7 +34,7 @@
                     <a href="" class="btn btn-primary">Sign in</a>
                 </li>
                 <li>
-                    <a href="" class="btn btn-accent">Sign in</a>
+                    <a href="" class="btn btn-accent">Sign up</a>
                 </li>
             </ul>
         </div>
@@ -202,10 +202,23 @@
     </footer>
     <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <script>
-        /*var colc = new Colcade('.grid', {
-                                                            columns: '.grid-col',
-                                                            items: '.grid-item'
-                                                        });*/
+        function openMenu() {
+            var navLinksEl = document.getElementById('navLinks');
+
+            if (navLinksEl.classList) {
+                navLinksEl.classList.toggle('open');
+            } else {
+                var classes = navLinksEl.className.split(' ');
+                var i = classes.indexOf('open');
+
+                if (i >= 0) {
+                    classes.splice(i, 1);
+                } else {
+                    classes.push('open');
+                    navLinksEl.className = classes.join(' ');
+                }
+            }
+        }
     </script>
 </body>
 
