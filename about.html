@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BucketList - About Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="brand">BucketList</a>
+                <a onclick="openMenu()" class="toggle-menu" href="javascript:void(0)">
+                    <i class="material-icons">
+                        menu
+                    </i>
+                </a>
+                <ul id="navLinks">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Ideas</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn btn-primary">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn btn-accent">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <div class="container">
+                <h1>About Us </h1>
+               
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nunc, porttitor non ornare in, porttitor non felis. Donec non iaculis dui, vitae rhoncus ligula. Sed eu mattis urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean varius auctor est, et venenatis lectus hendrerit sit amet. Mauris rhoncus odio ultricies aliquet sagittis. Vivamus pharetra quam eget commodo tincidunt. Nullam interdum molestie felis ac congue. Nam fringilla ligula at arcu pretium porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+            </div>
+        </header>
+       
+     
+      <section id="features">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="content-text">
+                Donec posuere lorem vitae justo ultrices eleifend. Mauris fermentum enim vitae porttitor feugiat. Sed et felis sit amet urna sodales ultricies ac quis leo. Nunc mollis enim nec finibus pretium. Duis justo nunc, fermentum at odio id, mollis tristique turpis. Sed nec ipsum finibus, convallis metus vel, lacinia enim. Nulla vestibulum eros ut placerat faucibus. Nullam cursus lobortis felis vitae luctus. Duis tempus tempus ex, at ultricies dui finibus at. Pellentesque mattis nibh eu arcu aliquet pellentesque. Maecenas gravida viverra libero, et dictum ligula. Donec urna turpis, iaculis ac cursus ornare, volutpat in sem. Fusce at justo at enim mattis dapibus ac eu lectus. Praesent sodales, neque quis tristique tincidunt, leo enim tempus eros, ac euismod diam purus sit amet ante. Maecenas elit nulla, laoreet eget lorem nec, venenatis dignissim dui.   
+                </p>
+
+            </section>
+
+           <footer>
+           
+            <p>&copy;BucketList - 2019</p>
+        
+        </footer>
+
+        <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+        <script>
+            function openMenu() {
+                var navLinksEl = document.getElementById('navLinks');
+    
+                if (navLinksEl.classList) {
+                    navLinksEl.classList.toggle('open');
+                } else {
+                    var classes = navLinksEl.className.split(' ');
+                    var i = classes.indexOf('open');
+    
+                    if (i >= 0) {
+                        classes.splice(i, 1);
+                    } else {
+                        classes.push('open');
+                        navLinksEl.className = classes.join(' ');
+                    }
+                }
+            }
+        </script>
+
+
+       
+    </body>
+    
+    </html>
