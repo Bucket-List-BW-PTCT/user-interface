@@ -1,0 +1,14 @@
+header {
+    @include flex-layout(column, center, center);
+    height: calc(100vh - 300px);
+    background-image: url('../images/header-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white-color;
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 18px;
+    }
