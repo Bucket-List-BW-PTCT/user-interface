@@ -6,6 +6,7 @@
     "scripts": {
         "start:sass": "sass scss/main.scss css/main.css --watch",
         "build:sass": "sass scss/main.scss css/main.css"
+        
     },
     "repository": {
         "type": "git",
