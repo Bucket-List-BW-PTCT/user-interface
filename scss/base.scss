@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -57,8 +59,4 @@ img {
 input {
     border: none;
     outline: none;
-}
-
-input:focus {
-    border: 1px solid $green-color;
 }

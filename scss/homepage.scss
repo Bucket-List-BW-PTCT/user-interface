@@ -13,6 +13,7 @@
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 18px;
+            text-shadow: 1px 1px 2px #000000;
         }
         .search-bar {
             @include flex-layout(row,
@@ -20,20 +21,22 @@
             center);
             text-align: center;
             position: relative;
+            height: fit-content;
+            font-size: 1.6rem;
             input {
                 width: 75%;
-                padding: 13px;
+                padding: 12px;
                 border-radius: 25px 0 0 25px;
-                border: 1px solid $light-grey;
+                //border: 1px solid $light-grey;
             }
             button {
-                border: 1px solid $light-grey;
+                //border: 1px solid $light-grey;
                 background-color: $white-color;
                 color: $green-color;
-                padding: 8.5px 20px 5px 20px;
+                padding: 6px 20px;
                 text-align: center;
                 border-radius: 0 25px 25px 0;
-                border-left: none;
+                //border-left: none;
                 transition: .3s;
                 &:hover {
                     color: darken($green-color, 10%);
@@ -44,6 +47,7 @@
             margin-top: 5px;
             text-align: center;
             font-size: 1.3rem;
+            text-shadow: 1px 1px 2px #000000;
         }
         @media (min-width: $tablet) {
             padding: 0 5rem;
@@ -88,6 +92,17 @@
             }
             &-item {
                 position: relative;
+                .caption {
+                    position: absolute;
+                    top: 15px;
+                    left: 0;
+                    padding: 10px;
+                    font-size: 1.4em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    background-color: rgba(0, 0, 0, 0.75);
+                    color: $white-color;
+                }
             }
             &-item .action {
                 position: absolute;
@@ -96,23 +111,30 @@
                 display: flex;
                 .btn-action {
                     background-color: $green-color;
-                    padding: 5px;
                     color: $white-color;
                     -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
                     -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
                     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
                     transition: .3s;
+                    //width: 30px;
+                    padding-top: 3px;
+                    height: 30px;
                     &--like {
                         padding-left: 15px;
+                        padding-right: 10px;
                         border-right: 1px solid $white-color;
                         border-radius: 25px 0 0px 25px;
                     }
                     &--add {
                         padding-right: 15px;
+                        padding-left: 10px;
                         border-radius: 0 25px 25px 0;
                     }
                     &:hover {
                         background-color: darken($green-color, 10%);
+                    }
+                    .material-icons {
+                        font-size: 16px;
                     }
                 }
             }
