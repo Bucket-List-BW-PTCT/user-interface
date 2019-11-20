@@ -28,23 +28,6 @@ nav {
                 &:hover {
                     background-color: #dddddd;
                 }
-                &.btn {
-                    padding: 10px 16px;
-                    border-radius: 25px;
-                    transition: .3s;
-                    &-primary {
-                        border: 1px solid $green-color;
-                        color: $green-color;
-                        margin: 0 16px;
-                    }
-                    &-accent {
-                        background-color: $green-color;
-                        color: white;
-                        &:hover {
-                            background-color: darken($green-color, 10%)
-                        }
-                    }
-                }
             }
         }
     }
@@ -69,6 +52,21 @@ nav {
             transition: .3s;
             &:hover {
                 background-color: #dddddd;
+            }
+            &.btn {
+                width: 100%;
+                text-align: center;
+                border: none;
+                border-radius: 0;
+                &-primary,
+                &-accent {
+                    margin: 0;
+                    background: none;
+                    color: $base-color;
+                    &:hover {
+                        background-color: #dddddd;
+                    }
+                }
             }
         }
     }

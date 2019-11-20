@@ -1,0 +1,78 @@
+header#about {
+    .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: $base-color;
+        padding: 30px;
+        font-size: 1.6rem;
+        p {
+            text-shadow: none;
+        }
+        h1 {
+            text-shadow: none;
+        }
+    }
+}
+
+section#about-features {
+    .container h2 {
+        margin-bottom: 30px;
+    }
+    background-color: $base-color;
+    color: $white-color;
+    padding: 45px 0;
+}
+
+#team {
+    h2 {
+        padding: 20px 0;
+    }
+    padding-bottom: 20px;
+}
+
+.profiles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .profile-box {
+        background: #FFFFFF;
+        box-shadow: 0 2px 6px 0 rgba(47, 83, 151, 0.10);
+        border-radius: 3px;
+        margin: 16px 16px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        transition: 300ms;
+        flex-grow: 1;
+        @media (min-width: $tablet) {
+            max-width: 45%;
+        }
+        @media (min-width: $large) {
+            max-width: 30%;
+        }
+        &:hover {
+            box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.03);
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px 0 rgba(47, 83, 151, 0.10);
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-weight: 300;
+            font-size: 18px;
+            margin-bottom: 0;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.3rem;
+            color: $light-grey;
+        }
+        .btn-group {
+            @include flex-layout(row, center);
+            margin-top: 16px;
+            padding-bottom: 10px;
+        }
+    }
+}
