@@ -1,11 +1,22 @@
 header#about {
+    padding: 0;
     .container {
+        @include flex-layout(column);
         background-color: rgba(255, 255, 255, 0.9);
         color: $base-color;
         padding: 30px;
+        text-align: left;
         font-size: 1.6rem;
-        p {
+        p.text-content {
+            text-align: left;
             text-shadow: none;
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+            width: 100%;
+            a {
+                color: $green-color;
+                border-bottom: 1px dashed $green-color;
+            }
         }
         h1 {
             text-shadow: none;

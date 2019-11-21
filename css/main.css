@@ -295,11 +295,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 300px);
+  height: fit-content;
   background-image: url("../images/header-cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff; }
+  @media (min-width: 768px) {
+    header {
+      height: calc(100vh - 300px); } }
   header h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -449,15 +452,29 @@ footer {
   footer p {
     font-size: 1.2rem; }
 
-header#about .container {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #343434;
-  padding: 30px;
-  font-size: 1.6rem; }
-  header#about .container p {
-    text-shadow: none; }
-  header#about .container h1 {
-    text-shadow: none; }
+header#about {
+  padding: 0; }
+  header#about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: inherit;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #343434;
+    padding: 30px;
+    text-align: left;
+    font-size: 1.6rem; }
+    header#about .container p.text-content {
+      text-align: left;
+      text-shadow: none;
+      font-size: 1.7rem;
+      margin-bottom: 15px;
+      width: 100%; }
+      header#about .container p.text-content a {
+        color: #3cb46e;
+        border-bottom: 1px dashed #3cb46e; }
+    header#about .container h1 {
+      text-shadow: none; }
 
 section#about-features {
   background-color: #343434;

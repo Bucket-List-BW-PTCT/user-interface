@@ -2,11 +2,14 @@
     
     header {
         @include flex-layout(column, center, center);
-        height: calc(100vh - 300px);
+        height: fit-content;
         background-image: url('../images/header-cover.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         color: $white-color;
+        @media (min-width: $tablet) {
+            height: calc(100vh - 300px);
+        }
         h1 {
             font-size: 3rem;
             font-weight: bold;
