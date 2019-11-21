@@ -136,10 +136,6 @@ select {
   margin: 0;
   padding: 0; }
 
-.container {
-  width: 90%;
-  margin: 0 auto; }
-
 html,
 body {
   font-size: 62.5%;
@@ -181,6 +177,16 @@ input {
   border: none;
   outline: none; }
 
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.text-warning {
+  color: #f89d13; }
+
+.text-secondary {
+  color: #6c757d; }
+
 .btn {
   padding: 10px 16px;
   border-radius: 25px;
@@ -220,6 +226,7 @@ nav {
     @media (min-width: 1080px) {
       nav ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center; }
         nav ul li a {
@@ -285,6 +292,7 @@ nav {
 /* with flexbox */
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 300px);
@@ -301,6 +309,7 @@ header {
     text-shadow: 1px 1px 2px #000000; }
   header .search-bar {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -336,9 +345,6 @@ header {
 #bestAdventures {
   padding: 15px; }
   #bestAdventures .grid {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex; }
     #bestAdventures .grid-col {
       -webkit-box-flex: 1;
@@ -409,6 +415,7 @@ header {
     margin-top: 30px; }
   #features .tools {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: inherit;
     flex-wrap: wrap;
@@ -502,9 +509,104 @@ section#about-features {
       color: #a7a5a5; }
     .profiles-container .profile-box .btn-group {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: inherit;
       margin-top: 16px;
       padding-bottom: 10px; }
+
+main#ideas {
+  margin-top: 20px; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: wrap; }
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: inherit;
+  width: 100%; }
+  .col.listing {
+    box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 7px;
+    position: relative;
+    background: #ffffff;
+    display: block; }
+    @media (min-width: 768px) {
+      .col.listing {
+        display: flex;
+        flex-direction: row; } }
+    .col.listing .img {
+      display: block;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+      flex: 0 0 100%;
+      height: 180px; }
+      @media (min-width: 768px) {
+        .col.listing .img {
+          flex: 0 0 230px;
+          width: 230px;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 7px;
+          margin-right: 10px; } }
+    .col.listing .btn-listing {
+      font-size: 11px;
+      display: inline-block;
+      padding: 5px 20px;
+      background: #e9ecef;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      color: #000000;
+      font-weight: bold;
+      transition: .3s; }
+      .col.listing .btn-listing:hover {
+        background-color: #3cb46e;
+        color: white; }
+    .col.listing .lh-content {
+      padding: 20px;
+      position: relative;
+      width: 100%; }
+      .col.listing .lh-content .bookmark {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.03);
+        transition: .3s all ease;
+        font-size: 16px;
+        color: #5bc888; }
+        .col.listing .lh-content .bookmark span {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%); }
+        .col.listing .lh-content .bookmark:hover {
+          background: #f23a2e; }
+          .col.listing .lh-content .bookmark:hover span {
+            color: #ffffff; }
+      .col.listing .lh-content p {
+        margin-top: 25px; }
+      .col.listing .lh-content h3 {
+        margin-bottom: 1rem; }
+        .col.listing .lh-content h3 a {
+          color: #5bc888; }
+    .col.listing address,
+    .col.listing .review {
+      font-size: 13px; }
+    .col.listing h3 {
+      font-size: 16px !important; }
 
 /*# sourceMappingURL=main.css.map */

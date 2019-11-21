@@ -58,9 +58,6 @@
     #bestAdventures {
         padding: 15px;
         .grid {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
             display: flex;
             &-col {
                 -webkit-box-flex: 1;
@@ -149,7 +146,7 @@
             margin-top: 30px;
         }
         .tools {
-            @include flex-layout(column,
+            @include flex-layout(row,
             center);
             flex-wrap: wrap;
             padding: 40px 0 20px 0;

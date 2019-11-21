@@ -1,0 +1,104 @@
+main#ideas {
+    margin-top: 20px;
+}
+
+.row {
+    @include flex-layout();
+    flex-wrap: wrap;
+}
+
+.col {
+    @include flex-layout(column);
+    width: 100%;
+    &.listing {
+        box-shadow: 0 2px 20px -2px rgba(0, 0, 0, .1);
+        margin-bottom: 30px;
+        border-radius: 7px;
+        position: relative;
+        background: $white-color;
+        display: block;
+        @media (min-width: $tablet) {
+            display: flex;
+            flex-direction: row;
+        }
+        .img {
+            display: block;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            flex: 0 0 100%;
+            height: 180px;
+            @media (min-width: $tablet) {
+                flex: 0 0 230px;
+                width: 230px;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 7px;
+                margin-right: 10px;
+            }
+        }
+        .btn-listing {
+            font-size: 11px;
+            display: inline-block;
+            padding: 5px 20px;
+            background: $gray-200;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            color: $black-color;
+            font-weight: bold;
+            transition: .3s;
+            &:hover {
+                background-color: $green-color;
+                color: white;
+            }
+        }
+        .lh-content {
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            .bookmark {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: inline-block;
+                background: rgba($black-color, .03);
+                transition: .3s all ease;
+                font-size: 16px;
+                color: lighten($green-color, 10%);
+                span {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &:hover {
+                    background: $danger;
+                    span {
+                        color: $white-color;
+                    }
+                }
+            }
+            p {
+                margin-top: 25px;
+            }
+            h3 {
+                margin-bottom: 1rem;
+                a {
+                    color: lighten($green-color, 10%);
+                }
+            }
+        }
+        address,
+        .review {
+            font-size: 13px;
+        }
+        h3 {
+            font-size: 16px!important;
+        }
+    }
+}

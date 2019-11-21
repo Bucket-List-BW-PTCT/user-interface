@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BucketList - Home Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="brand">BucketList</a>
+            <a onclick="openMenu()" class="toggle-menu" href="javascript:void(0)">
+                <i class="material-icons">
+                    menu
+                </i>
+            </a>
+            <ul id="navLinks">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="ideas.html">Ideas</a>
+                </li>
+                <li>
+                    <a href="https://bucket-list-werock.netlify.com/" class="btn btn-primary">Sign in</a>
+                </li>
+                <li>
+                    <a href="https://bucket-list-werock.netlify.com/" class="btn btn-accent">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="ideas" class="container">
+        <div class="row">
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/header-cover.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">House with Swimming Pool</a></h3>
+                    <address>Don St, Brooklyn, New York</address>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(3 Reviews)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;BucketList - 2019</p>
+    </footer>
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <script>
+        function openMenu() {
+            var navLinksEl = document.getElementById('navLinks');
+
+            if (navLinksEl.classList) {
+                navLinksEl.classList.toggle('open');
+            } else {
+                var classes = navLinksEl.className.split(' ');
+                var i = classes.indexOf('open');
+
+                if (i >= 0) {
+                    classes.splice(i, 1);
+                } else {
+                    classes.push('open');
+                    navLinksEl.className = classes.join(' ');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
