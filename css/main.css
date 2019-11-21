@@ -300,6 +300,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff; }
+  header#homePage {
+    padding: 40px 0; }
   @media (min-width: 768px) {
     header {
       height: calc(100vh - 300px); } }
@@ -534,7 +536,8 @@ section#about-features {
 
 header#ideasHeader {
   background-image: url("../images/person_looking_up_fligth_schedule.jpg");
-  position: relative; }
+  position: relative;
+  padding: 40px; }
   header#ideasHeader .filter {
     display: block;
     position: absolute;

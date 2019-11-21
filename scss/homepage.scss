@@ -7,6 +7,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         color: $white-color;
+        &#homePage {
+            padding: 40px 0;
+        }
         @media (min-width: $tablet) {
             height: calc(100vh - 300px);
         }
