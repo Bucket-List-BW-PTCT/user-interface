@@ -187,6 +187,26 @@ input {
 .text-secondary {
   color: #6c757d; }
 
+.bookmark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.03);
+  transition: .3s all ease;
+  font-size: 16px;
+  color: #5bc888; }
+  .bookmark span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .bookmark:hover {
+    background: #f23a2e; }
+    .bookmark:hover span {
+      color: #ffffff; }
+
 .btn {
   padding: 10px 16px;
   border-radius: 25px;
@@ -382,11 +402,43 @@ header {
         font-weight: bold;
         background-color: rgba(0, 0, 0, 0.75);
         color: #ffffff; }
+    #bestAdventures .grid .bookmark {
+      /*&:hover {
+          background: $danger;
+          span {
+              color: $white-color;
+          }
+      }
+      &.right {
+          right: 20px;
+          bottom: 20px;
+      }*/ }
     #bestAdventures .grid-item .action {
       position: absolute;
-      right: 10px;
-      bottom: 15px;
-      display: flex; }
+      left: 0;
+      bottom: 14px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%; }
+      @media (min-width: 768px) {
+        #bestAdventures .grid-item .action {
+          justify-content: flex-start;
+          bottom: 15px;
+          padding: 0 15px; } }
+      #bestAdventures .grid-item .action .bookmark {
+        position: relative;
+        background: rgba(255, 255, 255, 0.8);
+        transition: .3s all ease;
+        margin-right: 12px; }
+        #bestAdventures .grid-item .action .bookmark:hover {
+          background: #f23a2e; }
+          #bestAdventures .grid-item .action .bookmark:hover span {
+            color: #ffffff; }
+        #bestAdventures .grid-item .action .bookmark.left {
+          display: none; }
+          @media (min-width: 768px) {
+            #bestAdventures .grid-item .action .bookmark.left {
+              display: block; } }
       #bestAdventures .grid-item .action .btn-action {
         background-color: #3cb46e;
         color: #ffffff;
@@ -625,26 +677,8 @@ main#ideas {
       position: relative;
       width: 100%; }
       .col.listing .lh-content .bookmark {
-        position: absolute;
         right: 20px;
-        top: 20px;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        display: inline-block;
-        background: rgba(0, 0, 0, 0.03);
-        transition: .3s all ease;
-        font-size: 16px;
-        color: #5bc888; }
-        .col.listing .lh-content .bookmark span {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%); }
-        .col.listing .lh-content .bookmark:hover {
-          background: #f23a2e; }
-          .col.listing .lh-content .bookmark:hover span {
-            color: #ffffff; }
+        top: 20px; }
       .col.listing .lh-content p {
         margin-top: 25px; }
       .col.listing .lh-content h3 {

@@ -67,3 +67,27 @@ input {
 .text-secondary {
     color: $grey-300;
 }
+
+.bookmark {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba($black-color, .03);
+    transition: .3s all ease;
+    font-size: 16px;
+    color: lighten($green-color, 10%);
+    span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover {
+        background: $danger;
+        span {
+            color: $white-color;
+        }
+    }
+}

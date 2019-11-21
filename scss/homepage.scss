@@ -105,11 +105,53 @@
                     color: $white-color;
                 }
             }
+            .bookmark {
+                //left: 20px;
+                //bottom: 20px;
+                //background: rgba($white-color, 0.8);
+                //transition: .3s all ease;
+                /*&:hover {
+                    background: $danger;
+                    span {
+                        color: $white-color;
+                    }
+                }
+                &.right {
+                    right: 20px;
+                    bottom: 20px;
+                }*/
+            }
             &-item .action {
                 position: absolute;
-                right: 10px;
-                bottom: 15px;
+                left: 0;
+                bottom: 14px;
                 display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                //padding: 0 2px;
+                @media (min-width: $tablet) {
+                    justify-content: flex-start;
+                    bottom: 15px;
+                    padding: 0 15px;
+                }
+                .bookmark {
+                    position: relative;
+                    background: rgba($white-color, 0.8);
+                    transition: .3s all ease;
+                    margin-right: 12px;
+                    &:hover {
+                        background: $danger;
+                        span {
+                            color: $white-color;
+                        }
+                    }
+                    &.left {
+                        display: none;
+                        @media (min-width: $tablet) {
+                            display: block;
+                        }
+                    }
+                }
                 .btn-action {
                     background-color: $green-color;
                     color: $white-color;
