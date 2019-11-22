@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BucketList - Home Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="brand">BucketList</a>
+            <a onclick="openMenu()" class="toggle-menu" href="javascript:void(0)">
+                <i class="material-icons">
+                    menu
+                </i>
+            </a>
+            <ul id="navLinks">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="ideas.html">Ideas</a>
+                </li>
+                <li>
+                    <a href="https://bucket-list-werock.netlify.com/" class="btn btn-primary">Sign in</a>
+                </li>
+                <li>
+                    <a href="https://bucket-list-werock.netlify.com/" class="btn btn-accent">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="ideasHeader">
+        <div class="filter"></div>
+        <div class="container">
+            <h1>Your adeventure begin Here</h1>
+            <p>
+                Pickp up ideas, plan and let your dreams become reality.
+            </p>
+            <a href="javascript:void(0)" role="button" class="btn btn-accent">Get Started</a>
+        </div>
+    </header>
+    <main id="ideas" class="container">
+        <div class="row">
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/great_wall.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Great Wall of China</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        China
+                    </address>
+                    <p class="price">
+                        From $456.99
+                    </p>
+                    <p>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="review">(8k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/eiffel_tower.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Tour of Paris</a></h3>
+                    <address>
+                            <span class="icon-map-marker"></span>
+                            France
+                        </address>
+                    <p class="price">
+                        From $435.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(15k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/pyramid_of_giza.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Pyramid of Giza</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Egypt
+                    </address>
+                    <p class="price">
+                        From $756.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(4k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/closseum_rome_italy.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Colosseum of Rome</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Italy
+                    </address>
+                    <p class="price">
+                        From $658.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(2.5k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/venice_grand_canal_italy.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Venice Grand Canal</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Italy
+                    </address>
+                    <p class="price">
+                        From $640.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(5k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/chichen_itza_mexico.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Chichén Itzá</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Mexico
+                    </address>
+                    <p class="price">
+                        From $336.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="review">(3k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/christ_the_redeemer_brazil.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Christ the Redeemer of Rio de Janeiro</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Brazil
+                    </address>
+                    <p class="price">
+                        From $389.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(10k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/petra_jordan.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Petra in Jordan</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Jordan
+                    </address>
+                    <p class="price">
+                        From $689.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(900 Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/machu_picchu_peru.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Machu Picchu</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Peru
+                    </address>
+                    <p class="price">
+                        From $419.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="review">(1.5k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/taj_mahal_india.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Taj Mahal</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        India
+                    </address>
+                    <p class="price">
+                        From $849.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(5k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/santorin_greece.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Santorini</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Greece
+                    </address>
+                    <p class="price">
+                        From $749.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(2k Reviews)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col listing">
+                <a href="#" class="img d-block" style="background-image: url('images/nyamuragira_drc.jpg')"></a>
+                <div class="lh-content">
+                    <a role="button" href="javascript:void(0)" class="btn-listing">Book</a>
+                    <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+                    <h3><a href="javascript:void(0)">Nyamuragira Volcano</a></h3>
+                    <address>
+                        <span class="icon-map-marker"></span>
+                        Goma, Democratic Republic of Congo
+                    </address>
+                    <p class="price">
+                        From $1209.99
+                    </p>
+                    <p class="mb-0">
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-warning"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="icon-star text-secondary"></span>
+                        <span class="review">(350 Reviews)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;BucketList - 2019</p>
+    </footer>
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <script>
+        function openMenu() {
+            var navLinksEl = document.getElementById('navLinks');
+
+            if (navLinksEl.classList) {
+                navLinksEl.classList.toggle('open');
+            } else {
+                var classes = navLinksEl.className.split(' ');
+                var i = classes.indexOf('open');
+
+                if (i >= 0) {
+                    classes.splice(i, 1);
+                } else {
+                    classes.push('open');
+                    navLinksEl.className = classes.join(' ');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
